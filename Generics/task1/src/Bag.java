@@ -20,6 +20,10 @@ exception. Read the documentation for this.*/
 Code the drawOne method here. It should not take any
 parameters. It should return a generic object. More on the
 task description.*/
+     public T drawOne(){
+         int index = (int) (Math.random() * objects.size());
+         return objects.get(index);
+     }
 
     public /* return type?*/ drawMany(int howMany){
 /* TODO
