@@ -11,7 +11,11 @@ Initialize the objects variable*/
 code the add method described. It should be public and not 
 return anything. Just take in a parameter and  throw an 
 exception. Read the documentation for this.*/
-
+    public void add(T item) throws BagException{
+        if(item == null)
+            throw new BagException("Cannot add null to a Bag");
+        this.objects.add(item);
+    }
  /* TODO 
 Code the drawOne method here. It should not take any
 parameters. It should return a generic object. More on the

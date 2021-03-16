@@ -134,7 +134,7 @@ files:
                   throw new BagException("Nulls are not allowed");
               objects.add(object);
           }
-  - offset: 372
+  - offset: 547
     length: 140
     placeholder_text: "/* TODO \nCode the drawOne method here. It should not take\
       \ any\nparameters. It should return a generic object. More on the\ntask description.*/"
@@ -149,7 +149,7 @@ files:
               int idx = (int)Math.round(Math.random()*(objects.size()-1));
               return objects.get(idx);
           }
-  - offset: 525
+  - offset: 700
     length: 17
     placeholder_text: /* return type?*/
     initial_state:
@@ -159,7 +159,7 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: ArrayList<T>
-  - offset: 566
+  - offset: 741
     length: 195
     placeholder_text: "/* TODO\nhowMany is the number of elements to draw. \nCreate\
       \ an ArrayList of the generic type and \"drawOne\" as\nmany times as you need,\
@@ -175,7 +175,7 @@ files:
               for(int i=0;i<howMany;i++)
                   result.add(this.drawOne());
               return result;
-  - offset: 841
+  - offset: 1016
     length: 88
     placeholder_text: "/* TODO \nCheck that the probability is between 0 and 1. Otherwise\n\
       throw an exception. */"
