@@ -25,12 +25,17 @@ task description.*/
          return objects.get(index);
      }
 
-    public /* return type?*/ drawMany(int howMany){
+    public /* return type?*/ArrayList<T> drawMany(int howMany){
 /* TODO
 howMany is the number of elements to draw. 
 Create an ArrayList of the generic type and "drawOne" as
 many times as you need, putting the element drawn in the ArrayList.
 Then return it. */
+        ArrayList<T> result = new ArrayList<>();
+        for (int i = 0; i < howMany; i++) {
+            result.add(drawOne());
+        }
+        return result;
     }
 
     public void add(T element,double prob) throws BagException{
