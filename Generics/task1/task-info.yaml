@@ -217,14 +217,14 @@ files:
   visible: true
   placeholders:
   - offset: 22
-    length: 91
+    length: 97
     placeholder_text: "/* TODO \nImplement this class.\nUse the instructions and check\
       \ how it is used in Task.java*/"
     initial_state:
       length: 91
       offset: 22
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |2
        <C,R>{
