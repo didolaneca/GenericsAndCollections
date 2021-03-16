@@ -26,5 +26,15 @@ in the deck d */
     public static int addCards(ArrayList<Card> hand){
  /* TODO 
 This should compute the sum of values of the cards in an ArrayList of cards.*/
+        final String[] cardValues = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+        int result = 0;
+        for (Card card: hand) {
+            for (int i = 0; i < cardValues.length; i++) {
+                if(card.getValue().toString().equals(cardValues[i])){
+                    result += i + 1;
+                }
+            }
+        }
+        return result;
     }
 }

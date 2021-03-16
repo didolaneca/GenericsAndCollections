@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-16T22:24:24" hostname="DIDO-ASUS" time="139.065">
+  <properties/>
+  <testcase name="testDeck" classname="Tests" time="139.065"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

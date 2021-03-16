@@ -13,7 +13,7 @@ files:
       offset: 1100
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: Counter<String> words = new Counter<>(text.split("
       "));
   text: |-
@@ -56,8 +56,8 @@ files:
 - name: src/Counter.java
   visible: true
   placeholders:
-  - offset: 94
-    length: 95
+  - offset: 145
+    length: 106
     placeholder_text: "/* TODO \nThe HashMap should accomodate a generic class for\
       \ the keys and Integer for the value*/"
     initial_state:
@@ -65,9 +65,9 @@ files:
       offset: 94
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: <E,Integer>
-  - offset: 231
+  - offset: 293
     length: 202
     placeholder_text: |-
       /* TODO
@@ -79,7 +79,7 @@ files:
       offset: 231
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
               counts = new HashMap<>();
               for(E element:things){
@@ -89,7 +89,7 @@ files:
                       counts.put(element,1);
                   }
               }
-  - offset: 489
+  - offset: 793
     length: 143
     placeholder_text: "/* TODO \nThis just returns the specific count for an element.\
       \ It is a wrapper\nfor a getting the value of the HashMap given the key \"element\"\
@@ -99,9 +99,9 @@ files:
       offset: 489
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: return counts.get(element);
-  - offset: 737
+  - offset: 1077
     length: 55
     placeholder_text: "/* TODO \nReturns the most frequent key in the HashMap*/"
     initial_state:
@@ -109,7 +109,7 @@ files:
       offset: 737
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
               int max=0;
               E element=null;
@@ -134,5 +134,8 @@ files:
     \    }\n\n    public E mostFrequent(){\n/* TODO \nReturns the most frequent key\
     \ in the HashMap*/\n    }\n}\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 22:45:23 UTC
 record: -1

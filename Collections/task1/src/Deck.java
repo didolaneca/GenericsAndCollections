@@ -2,7 +2,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Deck implements Iterable<Card>{
+public class Deck implements Iterable<Card<?,?>>{
     private List<Card> deck;
     private String[] suits = {"Hearts","Clubs","Diamonds","Spades"};
     public Deck() {
@@ -10,7 +10,7 @@ public class Deck implements Iterable<Card>{
 This constructor initializes the deck variable with
 all the cards of a deck, except a joker.
 The suits array may help you.*/
-        this.deck=new LinkedList<Card>();
+        this.deck=new LinkedList<>();
         for (String suit : suits) {
             for (int i = 2; i <= 10; i++)
                 deck.add(new Card<Integer, String>(i, suit));
