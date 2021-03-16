@@ -42,6 +42,9 @@ Then return it. */
         /* TODO 
 Check that the probability is between 0 and 1. Otherwise
 throw an exception. */        // This is a way to add elements in a given proportion.
+        if(prob > 1 || prob < 0){
+            throw new BagException("Probability should be between 0 and 1");
+        }
         int tot = (int)Math.round(objects.size()*prob);
         for(int i=0;i<tot;i++){
             System.out.println("Adding "+i);
