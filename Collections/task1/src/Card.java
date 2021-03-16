@@ -15,4 +15,13 @@ Implement the constructor, getters and setters and toString */
     public S getSuit() {
         return suit;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append(this.value)
+                .append(" of ")
+                .append(this.suit)
+                .toString();
+    }
 }
