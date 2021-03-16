@@ -115,7 +115,7 @@ files:
       offset: 103
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: objects = new ArrayList<>();
   - offset: 198
     length: 171
@@ -127,7 +127,7 @@ files:
       offset: 156
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       public void add(T object) throws BagException{
               if(object==null)
@@ -143,7 +143,7 @@ files:
       offset: 330
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
          public T drawOne(){
               int idx = (int)Math.round(Math.random()*(objects.size()-1));
@@ -157,7 +157,7 @@ files:
       offset: 483
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: ArrayList<T>
   - offset: 882
     length: 195
@@ -169,7 +169,7 @@ files:
       offset: 524
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
               ArrayList<T> result = new ArrayList<>(howMany);
               for(int i=0;i<howMany;i++)
@@ -184,7 +184,7 @@ files:
       offset: 799
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |
       if (prob>1 || prob<0)
                   throw new BagException("Probability has to be between 0 and 1");
@@ -225,7 +225,7 @@ files:
       offset: 22
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2
        <C,R>{
           private C column;
@@ -243,5 +243,8 @@ files:
   text: "public class BingoChip/* TODO \nImplement this class.\nUse the instructions\
     \ and check how it is used in Task.java*/\n\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 17:45:35 UTC
 record: -1
