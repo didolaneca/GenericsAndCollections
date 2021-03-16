@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-16T17:45:34" hostname="DIDO-ASUS" time="0.007">
+<testsuite name="Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-16T22:50:26" hostname="DIDO-ASUS" time="0.007">
   <properties/>
   <testcase name="testBagSpecifics" classname="Tests" time="0.005"/>
   <testcase name="testBingoChip" classname="Tests" time="0.001"/>
