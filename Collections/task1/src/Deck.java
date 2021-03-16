@@ -9,21 +9,36 @@ public class Deck implements Iterable<Card>{
 /* TODO 
 This constructor initializes the deck variable with
 all the cards of a deck, except a joker.
-The suits array may help you.*/        }
+The suits array may help you.*/
+        this.deck=new LinkedList<Card>();
+        for (String suit : suits) {
+            for (int i = 2; i <= 10; i++)
+                deck.add(new Card<Integer, String>(i, suit));
+            deck.add(new Card<String, String>("Ace", suit));
+            deck.add(new Card<String, String>("Jack", suit));
+            deck.add(new Card<String, String>("Queen", suit));
+            deck.add(new Card<String, String>("King", suit));
     }
+}
 
-    public Card dealCard(){
+    public Card<?,?> dealCard(){
 /* TODO
 Code this. It is almost EXACTLY as the  method to draw one object
 from the bag in the previous task. The difference is that this method
 REMOVES the card from the deck */
+        int index = (int) (Math.random() * this.deck.size());
+        Card<?,?> card = this.deck.get(index);
+        deck.remove(index);
+        return card;
     }
 
     public int size(){/* TODO: Return the size of the deck (number of cards left in it)*/
+        return deck.size();
     }
     @Override
-    public Iterator<Card> iterator() {
+    public Iterator<Card<?,?>> iterator() {
        /* TODO 
 Return a new DeckIterator with this instance in the constructor.*/
+        return new DeckIterator<>(this);
     }
 }

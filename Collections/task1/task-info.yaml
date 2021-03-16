@@ -3,7 +3,7 @@ files:
 - name: src/Task.java
   visible: true
   placeholders:
-  - offset: 510
+  - offset: 526
     length: 66
     placeholder_text: |-
       /* TODO
@@ -18,7 +18,7 @@ files:
     encrypted_possible_answer: |-
       c : d)
                   System.out.print(c+", ");
-  - offset: 640
+  - offset: 703
     length: 87
     placeholder_text: "/* TODO \nThis should compute the sum of values of the cards\
       \ in an ArrayList of cards.*/"
@@ -204,7 +204,7 @@ files:
                   deck.add(new Card<String, String>("Jack", suit));
                   deck.add(new Card<String, String>("Queen", suit));
                   deck.add(new Card<String, String>("King", suit));
-  - offset: 421
+  - offset: 849
     length: 177
     placeholder_text: |-
       /* TODO
@@ -223,7 +223,7 @@ files:
                   return deck.remove(idx);
               else
                   return null;
-  - offset: 628
+  - offset: 1214
     length: 67
     placeholder_text: '/* TODO: Return the size of the deck (number of cards left
       in it)*/'
@@ -236,7 +236,7 @@ files:
     encrypted_possible_answer: |2-
 
               return this.deck.size();
-  - offset: 762
+  - offset: 1381
     length: 75
     placeholder_text: "/* TODO \nReturn a new DeckIterator with this instance in the\
       \ constructor.*/"

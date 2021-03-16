@@ -16,10 +16,11 @@ public class Task {
         System.out.println("Cards add:"+addCards(hand));
 
 
-        for(Card /* TODO
+        for(Card<?,?> card: d) { /* TODO
 Compete a for loop that prints every card
 in the deck d */
-
+            System.out.println(card);
+        }
     }
 
     public static int addCards(ArrayList<Card> hand){
